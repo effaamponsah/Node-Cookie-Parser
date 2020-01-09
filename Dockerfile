@@ -1,9 +1,9 @@
-FROM node:10
+FROM node:6.11.5
 
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json .
 
 RUN npm install
 
